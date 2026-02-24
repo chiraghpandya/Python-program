@@ -1,2 +1,0 @@
-#armstrong number
-
