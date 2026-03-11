@@ -1,13 +1,16 @@
 '''5. Write a function inside another function.'''
 
-def calculate(a,b):
+def calculation(a,b):
     def add():
-        return a + b
+        return a+b
+    def mul():
+        return a*b
+    print("Add is",add())
+    print("Mul is:",mul())
+    print("outer function is this")
 
-    def multiply():
-        return a * b
 
-    print("Addition:",add())
-    print("Multiplication :",multiply())
+a=int(input("Entre First number"))
+b=int(input("Entre Second number"))
+calculation(a,b)# call it here
 
-calculate(5, 3)
