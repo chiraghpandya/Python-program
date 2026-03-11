@@ -2,14 +2,11 @@
  Write a function to calculate simple interest.
  Keep rate default as 5%.'''
 
-def simple_interest(p, t, r=5):
-    si = (p * r * t)/100
+def sim(p,y,r=5):
+    si=(p*r*y)/100
     return si
 
-# main program
-principal = float(input("Enter Principal Amount:"))
-time = float(input("Enter Time (in year):"))
-
-result = simple_interest(principal, time)
-
-print("simple interest is (rate - 5%) =",result)
+p=float(input("Enter Principal Amount"))
+y=float(input("Enter years "))
+r=float(input("Enter Rate of interest "))
+print("Simple interest is:",sim(p,y,r))
