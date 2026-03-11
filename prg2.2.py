@@ -2,19 +2,19 @@
  Accept three numbers as parameters.
  Return the largest number.'''
 
-# function defenation
-def largest(a,b,c):
-    if a >= b and a >= c:
-        return a
-    elif b >= a and b >= c:
+def Large(a,b,c):
+    if a>b  and a>c:
+       return a
+    elif b>a  and b>c:
         return b
-    else:
+    elif c>a  and c>b:
         return c
+    else:
+        print("All are Equals")
 
-#main program
-num1 = float(input("Enter first number:"))
-num2 = float(input("Enter second number:"))
-num3 = float(input("Enter third number:"))
+a=int(input("Enter First Number:"))
+b=int(input("Enter Second Number:"))
+c=int(input("Enter Third Number:"))
+r=Large(a,b,c)
 
-result = largest(num1,num2,num3)
-print("The largest number is:",result)
+print(f"Large number is {r}")
