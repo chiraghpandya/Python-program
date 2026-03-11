@@ -3,18 +3,29 @@
 o Normal function
 o Recursive function'''
 
-def factorial(n):
-    if n < 0:
-        return "Factorial does not exists for negative number:"
 
-    fact = 1
-    for i in range (1, n + 1):
-        fact = fact * 1
+#normal function of factorial
+def fact1(n):
+    if n<0:
+        return "Invalid"
+    if n==1 or n==0:
+        return 1
+    f=1
+    for i in range(1,n+1):
+         f*=i
+    return f
 
-        return fact
+#Recursion function
+def fact1_rec(n):
+    if n<0:
+        return "Invalid"
+    if n==1 or n==0:
+        return 1
+    else:
+        return n*fact1_rec(n-1)
 
-#main program
-num1 = int(input("Enter Number:"))
-result = factorial(num)
-
-print("Factorial is :",result)
+#Main Program
+fact=int(input("Entre Factorial"))
+fact_rec=int(input("Entre Factorial for 2nd"))
+print("factorial is",fact1(fact))
+print("factorial in recursion is",fact1_rec(fact_rec))
