@@ -1,7 +1,7 @@
-'''3. Function to Calculate Factorial (Using Recursion)
+''' 3. Function to Calculate Factorial (Using Recursion)
  Implement factorial using:
 o Normal function
-o Recursive function'''
+o Recursive function '''
 
 
 #normal function of factorial
@@ -29,3 +29,4 @@ fact=int(input("Entre Factorial"))
 fact_rec=int(input("Entre Factorial for 2nd"))
 print("factorial is",fact1(fact))
 print("factorial in recursion is",fact1_rec(fact_rec))
+
