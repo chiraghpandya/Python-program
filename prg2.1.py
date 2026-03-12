@@ -25,9 +25,9 @@ print("3. Multiplication")
 print("4. Division")
 
 #input from user
-choice = input("Enter choice (1/2/3/4): ") 
-num1 = float(input("Enter first number: ")) 
-num2 = float(input("Enter second number: "))
+choice = input("Enter choice (1/2/3/4):") 
+num1 = float(input("Enter first number:")) 
+num2 = float(input("Enter second number:"))
 
 #Main condition
 if choice == '1':
@@ -43,3 +43,4 @@ elif choice == '4':
     print(f"The result is: {division(num1, num2)}")
 else:
     print("Invalid input")
+
